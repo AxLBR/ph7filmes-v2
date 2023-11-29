@@ -1,0 +1,776 @@
+/* ESTILIZAÇÃO GERAL DA PÁGINA */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-display: swap;
+}
+
+html{
+    background-color: #FAFAFA ;
+    overflow-x: hidden;
+    overscroll-behavior: none;
+    font-size: calc(10px + 0.390625vw);
+}
+
+body{
+    height: 0 !important;
+}
+
+strong{
+    display: contents;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #3F3F3F;
+    width: 100%;
+    max-height: 97px;
+    position: fixed;
+    inset: 0 auto auto 0;
+    z-index: 1;
+}
+
+h2{
+    margin: 0 30px;
+    white-space: nowrap;
+}
+
+h3{
+    font-size: 2.2rem;
+    font-family: 'Montserrat', 'sans-serif';
+    color: #3F3F3F;
+    text-align: center;
+    position: relative;   
+    top: -55px;   
+    background-color: #8BC53E;    
+    padding: 10px;     
+    transition: font-style .1s ease;
+}
+
+h3:hover{
+    font-style: oblique;
+    cursor: default;
+}
+
+.rectangle{
+    display: block;
+    height: 3px;
+    padding: 0 60px;
+    width: 25%;
+    background-color: #8BC53E;
+}
+
+section{
+    position: relative;
+}
+
+section span{
+    position: absolute; 
+    top:-96px;
+}
+
+.logo img{
+    width: 100px;
+    transition: transform .3s;
+}
+
+.icons ul li a img{
+    transition: transform .3s;
+}
+
+.logo img:hover{
+    transform: scale(1.1);
+}
+
+.icons ul li a img:hover{
+    transform: rotate(1turn);
+}
+
+.menu, .menuMobile{
+    font-family: 'Montserrat', 'sans-serif';  
+    color: #EFEFEF;
+    font-size: 1.3rem;
+}
+
+.menuMobile, .menuMobile ul label{
+    display: none;
+}
+
+.menu ul, .icons ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.menuMobile ul{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menu ul li, .menuMobile ul li{
+    font-weight: 800;
+    margin: 0 10px;
+    position: relative;
+}
+
+.menuMobile ul li img{
+    width: 35px;
+}
+
+.menu ul li ul{
+    position: absolute;
+    top: 94%;
+    width: 100%;
+    border-top: 2px solid #8BC53E;
+    background-color:#545454;
+    display: none;
+    border-radius: 15px;
+}
+
+.menuMobile ul li ul{
+    position: absolute;
+    top: 41px;
+    left: -105px;
+    border-top: 2px solid #8BC53E;
+    background-color:#545454;
+    display: none;
+    border-radius: 15px;
+}
+.menu ul li:hover ul, .menu ul li.over ul, .menuMobile ul li:hover ul, .menuMobile ul li.over ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li ul li:first-child, .menuMobile ul li ul li:first-child{
+    border-top: none;
+}
+
+.menu ul li ul li, .menuMobile ul li ul li{
+    border-top: 1px solid #c0c0c0;
+    display: block;
+    width: 80%;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.menu ul li ul li:hover, .menu ul li span:hover, .menuMobile ul li ul li:hover, .menuMobile ul li span:hover{
+    color: #8BC53E;
+    cursor: pointer;
+}
+
+.icons ul li{
+    margin: 0 4px;
+}
+
+.menu a, .menuMobile a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu a:hover, .menuMobile a:hover{
+    color: #8BC53E;
+}
+
+.mainVideo {
+    display: flex;
+    margin-top: 97px;
+    scroll-margin-top: 97px;
+}
+
+.aboutUs{
+    width: 100%;
+    height: auto;
+    background: #3F3F3F url(../assets/bg-sobrenos.webp) no-repeat top / cover;
+    padding: 30px;
+}
+
+.aboutUsTitle, .whatUsDoTitle, .portfolioTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font: 900 italic 2.8em Montserrat;
+    color: #8BC53E;
+    text-shadow: 4px 4px 0 #666;
+    margin: 0 0 30px 0;
+    
+}
+
+.aboutUsContent{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0 75px;
+    margin-bottom: 30px;
+    column-gap: 15px;
+}
+
+.aboutUsContent div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: flex-end;
+    height: fit-content;
+    margin: auto auto;
+}
+
+.aboutUsContent div img{
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    transition: transform ease-in .2s;
+}
+
+.aboutUsContent div img:hover{
+    transform: translateX(40px);
+}
+
+#backstage1{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#backstage2{
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: flex-start;
+}
+
+#backstage3{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.aboutUsContent article{
+    font-family: 'Montserrat', 'sans-serif';  
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 44px;
+    text-align: center;
+    color: #EFEFEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatUsDo{
+    width: 100%;
+    height: auto;
+    background-color: #D9D9D9;
+    background-image: url(../assets/bg-oquefazemos.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    padding: 30px;
+    padding-bottom: 0; 
+}
+
+.whatUsDoContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 30px;
+    gap: 20px;
+    padding: 0 5%;
+}
+
+.whatUsDoContent div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.whatUsDoContent div img{
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 30px;
+    border: 4px solid #8BC53E;  
+    border-radius: 50%;
+    background-repeat: repeat;
+    outline: solid 0px #8BC53E;
+    transition: outline 0.2s linear;
+    margin: 0.5em;
+}
+
+.whatUsDoContent div img:hover { 
+    outline-width: 10px;
+}
+
+.whatUsDoContent label{
+    font-size: 1rem;
+}
+
+.whatUsDoContent div p{
+    font-family: 'Montserrat', 'sans-serif';  
+    font-weight: 500;
+    padding: 10px;
+    font-size: 1.4rem;
+    line-height: 35px;
+    text-align: center;
+    color: #3F3F3F;
+    position: relative; 
+    top: -40px; 
+}
+
+.portfolio{
+    width: 100%;
+    height: auto;
+    background-color: #FAFAFA;
+    background-image: url(../assets/bg-portfolio.webp);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin-top: -30px;
+}
+
+.portfolioContent{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.infoWhats img{
+    position: fixed;
+    width: 60px;
+    right: 25px;
+    bottom: 25px;
+
+    transition: transform .3s;
+}
+
+.infoWhats img:hover{
+    filter: saturate(1.5);
+    transform: scale(1.1);
+}
+
+footer{
+    background-color: #3F3F3F;
+    width: 100%;
+    height: 54px;
+    font-family: 'Montserrat', 'sans-serif';  
+    color: #EFEFEF;
+    font-size: 1rem;
+    font-weight: 800;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    position: relative;
+}
+
+footer #emailButton{
+    background: #8BC53E;
+    border-radius: 7px;
+    padding: 8px;
+    margin-left: 13px;
+    border: none;
+    color: #3F3F3F;
+    font-family: 'Montserrat', 'sans-serif';  
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none !important;
+}
+
+/* CARDS DE VÍDEO E TELA CHEIA */
+
+.fullScreen{
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 3;
+    background-color: #313131;
+    overflow-y: hidden;
+}
+
+.fullScreen button {
+    background-image: url(../assets/close.webp);
+    background-color: rgb(0,0,0,0);
+    background-size: contain;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    z-index: 1;
+}
+
+.fullScreen button:hover {
+    opacity: .8;
+}
+
+.videoItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.videoItem .cardBox {
+    position: relative;
+    width: 100%;
+}
+
+.videoItem div img{
+    width: 100%;
+    border-radius: 15px;
+}
+.videoItem div button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 70px;
+    width: 70px;
+    transform: translate(-50%, -50%);
+    background-image: url(../assets/play.webp);
+    background-color: rgb(0,0,0,0);
+    background-size: contain;
+    padding: 12px 24px;
+    border: none;
+    opacity: .8;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.videoItem div button:hover {
+    opacity: 1;
+}
+
+.videoItem iframe {
+    position:relative; 
+    display:block; 
+    width: 100%;
+}
+
+.videoItem p{
+    margin-top: 10px;
+}
+
+/* FLECHA, MODELOS E TRANSIÇÃO EM BLOCOS */
+
+.upArrow{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    bottom: 10px;
+    left: calc(98%/2);
+}
+
+.upArrow img {
+    width: 35px;
+    transition: transform .3s;
+    opacity: .8;
+}
+
+.upArrow img:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.upArrow img a{
+    cursor: pointer;  
+}
+
+.downArrow{
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    left: calc(97%/2);
+}
+
+.downArrow img {
+    width: 55px;
+    transition: transform .3s;
+    opacity: .8;
+}
+
+.downArrow img:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.downArrow img a{
+    cursor: pointer;  
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.model {
+    display: none;
+}
+
+/* CARROSSEL */
+
+.slick-prev{
+    left: -50px !important;
+}
+
+.slick-prev:before {
+    content: "←" !important;
+    color: #8BC53E !important;
+    font-size: 3rem !important;
+    font-weight: 900;
+}
+    
+.slick-next:before {
+    content: "→" !important;
+    color: #8BC53E !important;
+    font-size: 3rem !important;
+    font-weight: 900;
+}
+
+.slick-slide{
+    height: auto !important;
+}
+
+.slick-dots li button:before {
+    font-size: 0.9rem !important;
+    color: #8BC53E !important;
+}
+
+/* MEDIA QUERRIES */
+
+@media (max-width: 1260px) {
+    .aboutUs{
+        background-image: url(../assets/bg-sobrenos-mobile.webp);
+    }
+
+    h3{
+        top: -50px;  
+    }
+
+    .aboutUsContent{
+        grid-template-columns: 1fr;
+    }
+
+    .aboutUsContent article{
+        margin-top: 40px;
+    }
+
+    .whatUsDo{
+        background-image: url(../assets/bg-oquefazemos-mobile.webp);
+    }
+
+    .whatUsDoContent{
+        grid-template-columns: 1fr;
+    }
+
+    .whatUsDoContent div{
+        margin-bottom: 0; 
+    }
+
+    .whatUsDoContent div:last-child{
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 1015px) {
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 22px;
+        max-height: 115px;
+    }
+
+    h3{
+        top: -45px;  
+    }
+
+    .logo{
+        margin-bottom: 5px;
+        margin-left: 50px;
+    }
+
+    .logo img{
+        width: 70px;
+    }
+
+    .icons ul li {
+        margin: 0 5px;
+    }
+
+    .icons ul li a img {
+        width: 30px;
+    }
+
+    .menu{
+        position: absolute;
+        right: 25px;
+        top: 45px;
+    }
+
+    .videoItem div button{
+        height: 48px;
+        width: 13px;
+    }
+
+    .upArrow{
+        display: block !important;
+    } 
+    
+    .downArrow{
+        display: none !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .portfolio{
+        background-image: url(../assets/bg-portfolio-mobile.webp);
+    }
+
+    .menu{
+        display: none;
+    }
+
+    h2{
+        text-align: center;
+        margin: 0;
+        white-space: normal;
+    }
+
+    .rectangle{
+        display: none;
+    }
+
+    .menuMobile{
+        display: block;
+        position: absolute;
+        right: 35px;
+        top: 25px;
+    }
+
+    .menuMobile ul li img {
+        width: 55px;
+    }
+
+    .menuMobile ul li ul{
+        top: 53px;
+        left: -91px;
+    }
+
+    .menuMobile ul li ul li{
+        font-size: 1.2rem;
+    }
+
+    .aboutUsContent{
+        padding: 0;
+    }
+
+    .whatUsDoContent div img{
+        width: 80%;
+    }
+
+    .infoWhats img{
+        width: 50px;
+    }
+
+    .slick-prev {
+        left: -40px !important;
+    }
+
+    footer div label{
+        display: none;
+    }
+
+    footer div p{
+        font-size: 0.9rem;
+    }
+
+    footer #emailButton{
+        margin-left: 0;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 650px){
+    .aboutUs{
+        background-image: url(../assets/bg-sobrenos-mobile-small.webp);
+    }
+
+    h3{
+        top: -40px;  
+    }
+
+    .aboutUsTitle, .aboutUsContent{ 
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .aboutUsContent article,.whatUsDoContent div p{
+        font-size: 1.6rem;
+        line-height: 28px;
+    }
+
+    .reveal{
+        transform: translateY(50px);
+    }
+}
+
+@media (max-width: 375px) {
+    h2{
+        font-size: 3.1rem;
+        text-align: center;
+    }
+
+    footer p{
+        text-align: end;
+    }
+
+    .aboutUsContent article, .whatUsDoContent div p{
+        font-size: 1.5rem;
+        line-height: 25px;
+    }
+
+    .menuMobile{
+        right: 20px;
+        top: 35px;
+    }
+
+    .menuMobile ul li img{
+        width: 45px;
+    }
+
+    .menuMobile ul li ul{
+        top: 45px;
+        left: -88px;
+    }
+}
+
+@media (max-width: 1000px) and (orientation:landscape){
+    nav{
+        position: absolute;
+    }
+}

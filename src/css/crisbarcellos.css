@@ -1,0 +1,568 @@
+/* ESTILIZAÇÃO GERAL DA PÁGINA */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-display: swap;
+}
+
+html{
+    background-color: #000000 ;
+    overflow-x: hidden;
+    overscroll-behavior: none;
+    font-size: calc(10px + 0.390625vw);
+    color: #EFEFEF
+}
+
+body{
+    height: 0 !important;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #3F3F3F;
+    width: 100%;
+    max-height: 97px;
+    position: sticky;
+    inset: 0 auto auto 0;
+    z-index: 1;
+}
+
+.logo img{
+    width: 100px;
+    transition: transform .3s;
+}
+
+.icons ul li a img{
+    transition: transform .3s;
+}
+
+.logo img:hover{
+    transform: scale(1.1);
+}
+
+.icons ul li a img:hover{
+    transform: rotate(1turn);
+}
+
+.menu, .menuMobile{
+    font-family: 'Montserrat', 'sans-serif';  
+    color: #EFEFEF;
+    font-size: 1.3rem;
+}
+
+.menuMobile, .menuMobile ul label{
+    display: none;
+}
+
+.menu ul, .icons ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.menuMobile ul{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menu ul li, .menuMobile ul li{
+    font-weight: 800;
+    margin: 0 10px;
+    position: relative;
+}
+
+.menuMobile ul li img{
+    width: 35px;
+}
+
+.menu ul li ul{
+    position: absolute;
+    top: 94%;
+    width: 100%;
+    border-top: 2px solid #8BC53E;
+    background-color:#545454;
+    display: none;
+    border-radius: 15px;
+}
+
+.menuMobile ul li ul{
+    position: absolute;
+    top: 41px;
+    left: -105px;
+    border-top: 2px solid #8BC53E;
+    background-color:#545454;
+    display: none;
+    border-radius: 15px;
+}
+.menu ul li:hover ul, .menu ul li.over ul, .menuMobile ul li:hover ul, .menuMobile ul li.over ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li ul li:first-child, .menuMobile ul li ul li:first-child{
+    border-top: none;
+}
+
+.menu ul li ul li, .menuMobile ul li ul li{
+    border-top: 1px solid #c0c0c0;
+    display: block;
+    width: 90%;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.menu ul li ul li:hover, .menu ul li span:hover, .menuMobile ul li ul li:hover, .menuMobile ul li span:hover{
+    color: #8BC53E;
+    cursor: pointer;
+}
+
+.icons ul li{
+    margin: 0 4px;
+}
+
+.menu a, .menuMobile a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu a:hover, .menuMobile a:hover{
+    color: #8BC53E;
+}
+main{
+    background-image: url(../images/crisBarcellos/pattern.png);
+    background-position: 0 0;
+    background-repeat: repeat;
+    padding-bottom: 30px;
+}
+
+.content{
+    background-image: url(../images/crisBarcellos/bg.png);
+    background-position: 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logoCris, .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoCris img{
+    width: 20%;
+    max-width: 300px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.logoCris p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 30%;
+    max-width: 700px;
+    display: contents;
+    color:#9DD657;
+}
+
+.imageDance{    
+    display: flex;
+    align-self: center;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 450px;
+}
+
+.titleDetail{
+    width: 30%;
+    max-width: 700px;
+}
+
+.titlePt1{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    color: #9DD657;
+    filter: drop-shadow(2px 1px 0px black);
+}
+
+.titlePt2{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 900;
+    font-size: 2.4rem;
+    color: #9DD657;
+    filter: drop-shadow(3px 3px 0px black);
+}
+
+.date{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.mainVideo{
+    padding: 0 5%;
+    margin-bottom: 35px;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section div{
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr 2fr;
+}
+
+section div p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+.sectionTitle{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color:#9DD657;
+    margin-top: 15px;
+    text-align: center;
+    width: 90%;
+}
+
+.sectionSubtitle{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    color:#9DD657;
+    width: 100%;
+    text-align: center;
+}
+
+.warning{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    width: 70%;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #345b58;
+    padding: 10px;
+    color: #EFEFEF;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.warning-bottom{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    width: 90%;
+    text-align: center;
+    font-size: 0.8rem;
+    background-color: #9DD657;
+    padding: 10px;
+    color: #2C2C2C;
+    margin-top: 20px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    align-items: flex-start;
+}
+
+.text{
+    line-height: 30px;
+}
+
+.master, .gold, .diamond{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.master p, .gold p, .diamond p{
+    text-align: center;
+    width: 80%;
+    margin: 5px 0;
+}
+
+.master, .gold{
+    border-right: 1px solid #EFEFEF;
+}
+
+.packageTitle{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-align: center !important;
+    background-color: #9DD657;
+    width: 70% !important;
+    padding: 5px;
+    color:#2C2C2C;
+}
+
+.packageSubtitle{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 0.9rem;
+    text-align: center !important;
+    width: 70% !important;
+    color:#EFEFEF;
+}
+
+span{
+    font-size: 0.8rem;
+}
+
+.price{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    font-size: 1.3rem;
+    text-align: center !important;
+    width: 70% !important;
+    color:#9DD657;
+}
+
+button:not(:last-child){
+    display: none;
+}
+
+.abp_button-wrapper .abp_footer-wrapper .abp_icons-wrapper {
+    background-color: #EFEFEF;
+    height: 30px;
+    width: 200px;
+}
+
+footer{
+    background-color: #3F3F3F;
+    width: 100%;
+    height: 54px;
+    font-family: 'Montserrat', 'sans-serif';  
+    color: #EFEFEF;
+    font-size: 1rem;
+    font-weight: 800;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    position: relative;
+}
+
+footer #emailButton{
+    background: #8BC53E;
+    border-radius: 7px;
+    padding: 8px;
+    margin-left: 13px;
+    border: none;
+    color: #3F3F3F;
+    font-family: 'Montserrat', 'sans-serif';  
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none !important;
+}
+
+/* MEDIA QUERRIES */
+
+@media (max-width: 1015px) {
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 22px;
+        max-height: 115px;
+    }
+
+    .logo{
+        margin-bottom: 5px;
+        margin-left: 50px;
+    }
+
+    .logo img{
+        width: 70px;
+    }
+
+    .icons ul li {
+        margin: 0 5px;
+    }
+
+    .icons ul li a img {
+        width: 30px;
+    }
+
+    .menu{
+        position: absolute;
+        right: 25px;
+        top: 45px;
+    }
+
+    section div {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .imageDance {
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+
+    .titleDetail {
+        width: 50%;
+        max-width: 700px;
+    }
+
+    .mainVideo {
+        width: 80%;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .master, .gold {
+        border-right: 0;
+    }
+
+    hr{
+        color: white;
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .gold, .diamond{
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 800px) {
+    .menu{
+        display: none;
+    }
+
+    .menuMobile{
+        display: block;
+        position: absolute;
+        right: 35px;
+        top: 25px;
+    }
+
+    .menuMobile ul li img {
+        width: 55px;
+    }
+
+    .menuMobile ul li ul{
+        top: 53px;
+        left: -91px;
+    }
+
+    .menuMobile ul li ul li{
+        font-size: 1.2rem;
+    }
+
+    footer div label{
+        display: none;
+    }
+
+    footer div p{
+        font-size: 0.9rem;
+    }
+
+    footer #emailButton{
+        margin-left: 0;
+        font-size: 1rem;
+    }
+
+    .date{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 650px){
+    .titleDetail{
+        width: 70%;
+        max-width: 700px;
+    }
+
+    .logoCris img {
+        width: 40%;
+        max-width: 300px;
+        position: relative;
+    }
+
+    .imageDance {
+        max-width: 270px;
+    }
+
+    .mainVideo {
+        width: 90%;
+        padding: 0;
+    }
+
+    .cards {
+        margin-top: 20px;
+    }
+    
+}
+
+@media (max-width: 375px) {
+    footer p{
+        text-align: end;
+    }
+
+    .menuMobile{
+        right: 20px;
+        top: 35px;
+    }
+
+    .menuMobile ul li img{
+        width: 45px;
+    }
+
+    .menuMobile ul li ul{
+        top: 45px;
+        left: -88px;
+    }
+    .titleDetail{
+        width: 90%;
+        max-width: 700px;
+    }
+
+    .imageDance {
+        max-width: 200px;
+    }
+
+    .logoCris img {
+        width: 50%;
+        max-width: 300px;
+        position: relative;
+    }
+}
+
+@media (max-width: 1000px) and (orientation:landscape){
+    nav{
+        position: absolute;
+    }
+}

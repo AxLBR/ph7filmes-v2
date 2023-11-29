@@ -1,0 +1,664 @@
+/* ESTILIZAÇÃO GERAL DA PÁGINA SEGMENTOS*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-display: swap;
+}
+
+html{
+    background-color: #FAFAFA ;
+    overflow-x: hidden;
+    overscroll-behavior: none;
+    font-size: calc(10px + 0.390625vw);
+}
+
+body{
+    height: 0 !important;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #3F3F3F;
+    width: 100%;
+    padding: 22px 0;
+    max-height: 97px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: auto;
+    right: auto;
+    z-index: 1;
+}
+
+h2{
+    margin: 0 30px;
+    white-space: nowrap;
+}
+
+h3{
+    font-size: 2.5rem;
+    font-family: 'Montserrat';
+    color: #3F3F3F;
+}
+
+.rectangle{
+    display: block;
+    height: 3px;
+    padding: 0 60px;
+    width: 25%;
+    background-color: #8BC53E;
+}
+
+.circle{
+    background-color: #ffffff00;
+    border: 3px solid #8BC53E;    
+    height: 1.6vw;
+    border-radius: 50%;
+    width: 1.6vw;
+    margin: 0 5px;
+}
+
+section{
+    position: relative;
+}
+
+section span{
+    position: absolute; 
+    top:-96px;
+}
+
+.logo img{
+    width: 100px;
+    transition: transform .3s;
+}
+
+.icons ul li a img{
+    transition: transform .3s;
+}
+
+.logo img:hover{
+    transform: scale(1.1);
+}
+
+.icons ul li a img:hover{
+    transform: rotate(1turn);
+}
+
+.menu, .menuMobile{
+    font-family: Montserrat;  
+    color: #EFEFEF;
+    font-size: 1.3rem;
+}
+
+.menuMobile, .menuMobile ul label{
+    display: none;
+}
+
+.menu ul, .icons ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.menuMobile ul{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menu ul li, .menuMobile ul li{
+    font-weight: 800;
+    margin: 0 10px;
+    position: relative;
+}
+
+.menuMobile ul li img{
+    width: 35px;
+}
+
+.menu ul li ul{
+    position: absolute;
+    top: 94%;
+    width: 100%;
+    border-top: 2px solid #8BC53E;
+    background-color:#545454;
+    display: none;
+    border-radius: 15px;
+}
+
+.menuMobile ul li ul{
+    position: absolute;
+    top: 41px;
+    left: -105px;
+    border-top: 2px solid #8BC53E;
+    background-color:#545454;
+    display: none;
+    border-radius: 15px;
+}
+.menu ul li:hover ul, .menu ul li.over ul, .menuMobile ul li:hover ul, .menuMobile ul li.over ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li ul li:first-child, .menuMobile ul li ul li:first-child{
+    border-top: none;
+}
+
+.menu ul li ul li, .menuMobile ul li ul li{
+    border-top: 1px solid #c0c0c0;
+    display: block;
+    width: 80%;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.menu ul li ul li:hover, .menu ul li span:hover, .menuMobile ul li ul li:hover, .menuMobile ul li span:hover{
+    color: #8BC53E;
+    cursor: pointer;
+}
+
+.icons ul li{
+    margin: 0 4px;
+}
+
+.menu a, .menuMobile a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu a:hover, .menuMobile a:hover{
+    color: #8BC53E;
+}
+
+.segments {
+    margin-top: 97px;
+    scroll-margin-top: 97px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;  
+    font-weight: 900;
+    font-style: italic;
+    font-size: 2.8em;
+    color: #3F3F3F;
+    background-color: #FAFAFA;
+}
+
+.educacao{
+    width: 100%;
+    height: auto;
+    background-color: #3F3F3F;
+    background-image: url(../assets/bg-sobrenos.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+}
+
+.educacaoContent{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.educacaoContent div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: -70px;
+}
+
+.educacaoContent article{
+    font-family: Montserrat;  
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 51px;
+    text-align: center;
+    color: #3F3F3F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #8BC53E;
+    border-radius: 0 0 20px 20px;
+    background-color: #8BC53E;
+    padding: 70px 30px 30px 30px;
+    margin-bottom: 30px;
+}
+
+.educacaoTitle, .publicidadeTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;  
+    font-weight: 900;
+    font-style: italic;
+    font-size: 2.8em;
+    color: #8BC53E;
+    text-shadow: 4px 4px 0 #666;
+    margin: 0 0 30px 0;
+}
+
+.educacaoTitle{
+    margin: 0;
+}
+
+.publicidadeContent{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 0 75px;
+    margin-bottom: 30px;
+    column-gap: 15px;
+}
+
+.publicidadeContent div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+    margin: auto auto;
+}
+
+.publicidadeContent div img{
+    width: 100%;
+    max-width: 500px;
+    transition: transform ease-in .2s;
+}
+
+.publicidadeContent div img:hover{
+    transform: translateX(40px);
+}
+
+#backstage1{
+    grid-column: 1;
+    grid-row: 1;
+    border: 10px solid #8BC53E;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    margin-right: 5%;
+}
+
+#backstage2{
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: flex-start;
+    border: 10px solid #8BC53E;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+
+#backstage3{
+    grid-column: 1;
+    grid-row: 3;
+    border: 10px solid #8BC53E;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    margin-left: 5%;
+}
+
+.publicidadeContent article{
+    font-family: Montserrat;  
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 51px;
+    text-align: center;
+    color: #3f3f3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.publicidade{
+    width: 100%;
+    height: auto;
+    background-color: #d9d9d9;
+    background-image: url(../assets/bg-portfolio.webp);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+}
+
+.infoWhats img{
+    position: fixed;
+    width: 60px;
+    right: 25px;
+    bottom: 25px;
+
+    transition: transform .3s;
+}
+
+.infoWhats img:hover{
+    filter: saturate(1.5);
+    transform: scale(1.1);
+}
+
+footer{
+    background-color: #3F3F3F;
+    width: 100%;
+    height: 54px;
+    font-family: Montserrat;  
+    color: #EFEFEF;
+    font-size: 1rem;
+    font-weight: 800;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+footer #emailButton{
+    background: #8BC53E;
+    border-radius: 7px;
+    padding: 8px;
+    margin-left: 13px;
+    border: none;
+    color: #3F3F3F;
+    font-family: Montserrat;  
+    font-weight: 800;
+    cursor: pointer;
+}
+
+/* FLECHA, MODELOS E TRANSIÇÃO EM BLOCOS */
+
+.upArrow{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    bottom: 10px;
+    left: calc(98%/2);
+}
+
+.upArrow img {
+    width: 35px;
+    transition: transform .3s;
+    opacity: .8;
+}
+
+.upArrow img:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.upArrow img a{
+    cursor: pointer;  
+}
+
+.downArrow{
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    left: calc(97%/2);
+}
+
+.downArrow img {
+    width: 55px;
+    transition: transform .3s;
+    opacity: .8;
+}
+
+.downArrow img:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.downArrow img a{
+    cursor: pointer;  
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* MEDIA QUERRIES */
+
+@media (max-width: 1260px) {
+    .educacao{
+        background-image: url(../assets/bg-sobrenos-mobile.webp);
+    }
+
+    .educacaoTitle, .publicidadeTitle{
+        margin: 0;
+    }
+
+    .educacaoContent{
+        width: 100%;
+    }
+
+    .educacaoContent div{
+        flex-direction: column;
+    }
+
+    #backstage1{
+        margin: 0;
+    }
+
+    #backstage2{
+        position: relative;
+        top: -20px;
+        border-radius: 0;
+    }
+
+    #backstage3{
+        margin: 0;
+        position: relative;
+        top: -40px;
+        border-radius: 0;
+    }
+
+    .educacaoContent article{
+        padding: 40px 30px 30px 30px;
+    }
+
+    .publicidadeContent{
+        grid-template-columns: 1fr;
+    }
+
+    .publicidadeContent div img{
+        margin-top: 30px;
+        max-width: initial;
+    }
+
+    .publicidadeContent article{
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 1015px) {
+    html{
+        scroll-padding-top: 115px;
+    }
+
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 22px;
+        max-height: 115px;
+    }
+
+    .segments{
+        margin-top: 115px;
+    }
+
+    section span{ 
+        top: -115px;
+    }
+
+    .logo{
+        margin-bottom: 5px;
+        margin-left: 50px;
+    }
+
+    .logo img{
+        width: 70px;
+    }
+
+    .icons ul li {
+        margin: 0 5px;
+    }
+
+    .icons ul li a img {
+        width: 30px;
+    }
+
+    .menu{
+        position: absolute;
+        right: 25px;
+        top: 45px;
+    }
+
+    .upArrow{
+        display: block !important;
+    } 
+    
+    .downArrow{
+        display: none !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .publicidade{
+        background-image: url(../assets/bg-portfolio-mobile.webp);
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .educacaoContent article{
+        padding: 40px 5px 30px 5px;
+    }
+
+    .circle{
+        width: 2vw;
+        height: 2vw;
+    }
+
+    h2{
+        text-align: center;
+        margin: 0;
+        white-space: normal;
+    }
+
+    .rectangle{
+        display: none;
+    }
+
+    .menuMobile{
+        display: block;
+        position: absolute;
+        right: 35px;
+        top: 25px;
+    }
+
+    .menuMobile ul li img {
+        width: 55px;
+    }
+
+    .menuMobile ul li ul{
+        top: 53px;
+        left: -91px;
+    }
+
+    .menuMobile ul li ul li{
+        font-size: 1.2rem;
+    }
+
+    .publicidadeContent{
+        padding: 0;
+    }
+
+    .infoWhats img{
+        width: 50px;
+    }
+
+    .slick-prev {
+        left: -40px !important;
+    }
+
+    footer div label{
+        display: none;
+    }
+
+    footer div p{
+        font-size: 0.9rem;
+    }
+
+    footer #emailButton{
+        margin-left: 0;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 650px){
+    .educacao{
+        background-image: url(../assets/bg-sobrenos-mobile-small.webp);
+    }
+
+    .publicidade{
+        background-size: auto;
+    }
+}
+
+@media (max-width: 430px){
+    .circle:not(:first-child):not(:last-child){
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    h2{
+        font-size: 3.1rem;
+        text-align: center;
+    }
+
+    footer p{
+        text-align: end;
+    }
+
+    .publicidadeContent article{
+        font-size: 1.8rem;
+        line-height: 31px;
+    }
+
+    .menuMobile{
+        right: 20px;
+        top: 35px;
+    }
+
+    .menuMobile ul li img{
+        width: 45px;
+    }
+
+    .menuMobile ul li ul{
+        top: 45px;
+        left: -88px;
+    }
+}
+
+@media (max-width: 1000px) and (orientation:landscape){
+    nav{
+        position: absolute;
+    }
+}
