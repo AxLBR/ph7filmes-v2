@@ -10,7 +10,7 @@ html{
     background-color: #FAFAFA ;
     overflow-x: hidden;
     overscroll-behavior: none;
-    font-size: calc(10px + 0.390625vw);
+    font-size: calc(10px + 0.190625vw);
 }
 
 body{
@@ -31,7 +31,7 @@ nav{
     max-height: 97px;
     position: fixed;
     inset: 0 auto auto 0;
-    z-index: 1;
+    z-index: 10;
 }
 
 h2{
@@ -54,6 +54,35 @@ h3{
 h3:hover{
     font-style: oblique;
     cursor: default;
+}
+
+.audioButton{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 15px;
+    bottom: 15px;
+    background-color: #8BC53E95;
+    border-radius: 55px;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.audioButton:hover{
+    background-color: #8BC53E;
+}
+
+.audioButton img{
+    opacity: 0.5;
+    width: 50px;
+}
+
+.audioButton img:hover{
+    opacity: 1;
 }
 
 .rectangle{
@@ -276,8 +305,9 @@ section span{
 }
 
 .whatUsDoContent{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 30px;
     gap: 20px;
     padding: 0 5%;
@@ -288,6 +318,7 @@ section span{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    flex-basis: calc(33.33% - 40px);
 }
 
 .whatUsDoContent div img{
@@ -583,14 +614,6 @@ footer #emailButton{
         background-image: url(../assets/bg-oquefazemos-mobile.webp);
     }
 
-    .whatUsDoContent{
-        grid-template-columns: 1fr;
-    }
-
-    .whatUsDoContent div{
-        margin-bottom: 0; 
-    }
-
     .whatUsDoContent div:last-child{
         margin-bottom: 0px;
     }
@@ -643,6 +666,16 @@ footer #emailButton{
     
     .downArrow{
         display: none !important;
+    }
+
+    .whatUsDoContent{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .whatUsDoContent div{
+        margin-bottom: 0; 
+        flex-basis: 0;
     }
 }
 

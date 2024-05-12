@@ -11,6 +11,20 @@ function openVideo (key){
   videoScreen.style.display = 'block';
 }
 
+//Áudio do vídeo principal
+function handleAudio(){
+  let mainVideo = document.querySelector('#mainVideo video');
+  let audioButton = document.querySelector('.audioButton img');
+
+  mainVideo.muted = !mainVideo.muted;
+
+  if(mainVideo.muted){
+    audioButton.src = "./src/assets/mute.png"
+  } else{
+    audioButton.src = "./src/assets/volume.png"
+  }
+}
+
 //Fecha modal
 function closeModal (){
   let videoScreen = document.querySelector('.fullScreen');

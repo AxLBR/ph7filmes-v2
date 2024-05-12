@@ -69,7 +69,7 @@ async function requestVimeosVideos(){
     const tokenResponse = await requestVimeoAccessToken();
 
     const response = await axios({
-        url: "https://api.vimeo.com/groups/818733/videos",
+        url: "https://api.vimeo.com/groups/818733/videos/",
         method: "GET",
         headers: {
             "Authorization": `Bearer ${tokenResponse.data}`,
