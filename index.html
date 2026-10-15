@@ -1,268 +1,765 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-    <head>
-        <!-- Configurações Gerais Site --> 
-        <title>Ph7 Filmes - Produtora Audiovisual</title>
-        <link href="./src/css/style.css" rel="stylesheet">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,800;1,900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-		<link rel="canonical" href="https://www.ph7filmes.com.br/">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="Produtora audiovisual de conteúdos para publicidade, internet, cinema e TV. Transformamos ideias em histórias impactantes através da arte do vídeo!"> 
-        <meta name="keywords" content="ph7 filmes, ph7filmes, produtora de vídeos, produtora de videos porto alegre, produtora de videos florianópolis, vídeos institucionais, vídeos corporativos, vídeos promocionais, produção audiovisual, edição de vídeo, filmagem profissional, videomarketing, vídeos para redes sociais">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-		<meta property="og:locale" content="pt_BR">
-		<meta property="og:type" content="website">
-		<meta property="og:title" content="Ph7 Filmes - Produtora Audiovisual">
-		<meta property="og:description" content="Produtora audiovisual de conteúdos para publicidade, internet, cinema e TV. Transformamos ideias em histórias impactantes através da arte do vídeo!">
-		<meta property="og:url" content="https://www.ph7filmes.com.br/">
-		<meta property="og:site_name" content="Ph7 Filmes">
+  <head>
+    <!-- Configurações Gerais Site -->
+    <title>Ph7 Filmes - Produtora Audiovisual</title>
+    <link href="./src/css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="canonical" href="https://www.ph7filmes.com.br/" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Produtora audiovisual de conteúdos para publicidade, internet, cinema e TV. Transformamos ideias em histórias impactantes através da arte do vídeo!"
+    />
+    <meta
+      name="keywords"
+      content="ph7 filmes, ph7filmes, produtora de vídeos, produtora de videos porto alegre, produtora de videos florianópolis, vídeos institucionais, vídeos corporativos, vídeos promocionais, produção audiovisual, edição de vídeo, filmagem profissional, videomarketing, vídeos para redes sociais"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ph7 Filmes - Produtora Audiovisual" />
+    <meta
+      property="og:description"
+      content="Produtora audiovisual de conteúdos para publicidade, internet, cinema e TV. Transformamos ideias em histórias impactantes através da arte do vídeo!"
+    />
+    <meta property="og:url" content="https://www.ph7filmes.com.br/" />
+    <meta property="og:site_name" content="Ph7 Filmes" />
+    <meta
+      property="og:image"
+      content="https://www.ph7filmes.com.br/src/images/og-image.jpg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://www.ph7filmes.com.br/src/images/og-image.jpg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Logotipo da Ph7 Filmes" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ph7 Filmes - Produtora Audiovisual" />
+    <meta
+      name="twitter:description"
+      content="Produtora audiovisual de conteúdos para publicidade, internet, cinema e TV. Transformamos ideias em histórias impactantes através da arte do vídeo!"
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.ph7filmes.com.br/src/images/og-image.jpg"
+    />
 
-        <!-- Favicons --> 
-        <link rel="apple-touch-icon" sizes="57x57" href="./src/favicons/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="./src/favicons/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="./src/favicons/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="./src/favicons/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="./src/favicons/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="./src/favicons/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="./src/favicons/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="./src/favicons/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="./src/favicons/apple-icon-180x180.png">
-		<link rel="icon" href="./src/favicons/favicon.ico">
-        <link rel="icon" type="image/png" sizes="192x192"  href="./src/favicons/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./src/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="./src/favicons/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./src/favicons/favicon-16x16.png">
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    </head>
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./src/favicons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./src/favicons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./src/favicons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./src/favicons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./src/favicons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./src/favicons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./src/favicons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./src/favicons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./src/favicons/apple-icon-180x180.png"
+    />
+    <link rel="icon" href="./src/favicons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./src/favicons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./src/favicons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./src/favicons/favicon-16x16.png"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+  </head>
 
-    <body>
-        <!-- Barra de Navegação --> 
-        <nav>
-            <!-- Logotipo --> 
-            <div class="logo">
-                <a href="/">
-                    <img src="./src/assets/logo.webp" alt="Logotipo da PH7 Filmes">
-                </a>  
-            </div>
+  <!-- Google Tag Manager -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-EWJ08NCCLL"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-            <!-- Menu --> 
-            <div class="menu">
-                <ul>
-                    <li>
-                        <a href="#sobrenos"> SOBRE NÓS </a>
-                    </li>  
-                    <label>|</label>
-                    <li>
-                        <a href="#oquefazemos"> O QUE FAZEMOS </a>
-                    </li>  
-                    <label>|</label>
-                    <li>
-                        <a href="#portfolio"> PORTFÓLIO </a>
-                    </li>    
-                    <label class="hidden">|</label>
-                    <li class="hidden">
-                        <span>SEGMENTOS</span>
+    gtag("config", "G-EWJ08NCCLL");
+  </script>
 
-                        <ul>
-                            <li><a href="./segmentos.html#segmentos"> EDUCAÇÃO </a></li>
-                            <li><a href="./segmentos.html#publicidade"> PUBLICIDADE </a></li>
-                            <li><a href="./segmentos.html#marketing"> MARKETING </a></li>
-                            <li><a href="./segmentos.html#variedades"> VARIEDADES </a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="menuMobile">
-                <ul>
-                    <li>
-                        <img src="./src/assets/menu-mobile.webp" alt="Menu Hambúrguer Mobile">
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-P37X9DC9");
+  </script>
 
-                        <ul>
-                            <li>
-                                <a href="#sobrenos"> SOBRE NÓS </a>
-                            </li>  
-                            <label>|</label>
-                            <li>
-                                <a href="#oquefazemos"> O QUE FAZEMOS </a>
-                            </li>  
-                            <label>|</label>
-                            <li>
-                                <a href="#portfolio"> PORTFÓLIO </a>
-                            </li>    
-                            <label class="hidden">|</label>
-                            <li class="hidden">
-                                <a href="./segmentos.html"> SEGMENTOS </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof url != "undefined") {
+          window.open(url, "_blank");
+        }
+      };
+      gtag("event", "conversion", {
+        send_to: "AW-990729196/0Hq1COWJ3KAbEOyntdgD",
+        value: 1.0,
+        currency: "BRL",
+        event_callback: callback,
+      });
+      return false;
+    }
+  </script>
+  <!-- End Google Tag Manager -->
 
-            <!-- Ícones Redes Sociais --> 
-            <div class="icons">
-                <ul>
-                    <li>
-                        <a target="_blank" href="https://www.instagram.com/ph7filmes/">
-                            <img src="./src/assets/icon-instagram.webp" alt="Ícone da rede social Instagram"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://vimeo.com/ph7filmes">
-                            <img src="./src/assets/icon-vimeo.webp" alt="Ícone da plataforma Vimeo"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.facebook.com/Ph7Filmes/">
-                            <img src="./src/assets/icon-facebook.webp" alt="Ícone da rede social Facebook"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.linkedin.com/company/ph7-filmes/">
-                            <img src="./src/assets/icon-linkedin.webp" alt="Ícone da rede social Linkedin"/>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <main>
-            <!-- Vídeo Principal --> 
-            <section id="mainVideo" class="mainVideo">
-                <video playsinline autoplay loop muted width="100%">
-                    <source src="./src/videos/reels.mp4" type="video/mp4" />
-                </video>      
-            </section>
-
-            <!-- Sobre Nós --> 
-            <section class="aboutUs">
-                <span id="sobrenos"></span>
-                <div class="aboutUsTitle reveal">
-                    <div class="rectangle"></div>
-                    <h2>SOBRE NÓS</h2>
-                    <div class="rectangle"></div>
-                </div>
-
-                <div class="aboutUsContent reveal">                
-                    <div>
-                        <img id="backstage1" src="./src/images/bastidores1.webp" alt="Imagem 1 de bastidores de uma produção"/>
-                        <img id="backstage2" src="./src/images/bastidores2.webp" alt="Imagem 2 de bastidores de uma produção"/>
-                        <img id="backstage3" src="./src/images/bastidores3.webp" alt="Imagem 3 de bastidores de uma produção"/>
-                    </div>
-
-                    <article class="reveal">
-                        Nascida em 2012, a produtora <strong>Ph7 Filmes</strong> já está a mais de uma década atuando no mercado audiovisual do Rio Grande do Sul. Em 2022 alçamos voo até o estado vizinho e atualmente Santa Catarina também já conta com os serviços da produtora. Atuando no mercado desde 2006, o head da empresa, Tiago Konrath, vem empreendendo e criando experiências e realizações audiovisuais nos mais variados segmentos.
-                        A produtora de filmes e vídeos surgiu com a missão traduzir para as telas as necessidades e projetos de comunicação de seus clientes de forma personalizada e humanizada. Trabalhamos com pessoas, agências e marcas, nos envolvendo profundamente nas necessidades do cliente, oferecendo soluções criativas e customizadas.
-                        Somos pessoas antenadas nas tendências, novos formatos e tecnologias. A capacidade de se adaptar está em nosso DNA.
-                    </article>
-                </div>
-            </section>
-
-            <!-- O que Fazemos --> 
-            <section class="whatUsDo">
-                <span id="oquefazemos"></span>
-                <div class="whatUsDoTitle reveal">
-                    <div class="rectangle"></div>
-                    <h2>O QUE FAZEMOS</h2>
-                    <div class="rectangle"></div>
-                </div>
-
-                <div class="whatUsDoContent reveal">
-                    <div>
-                        <img src="./src/images/produçao1.webp" alt="Imagem de produção utilizando estabilizador">
-                        <h3>CONTENT</h3>
-                        <p>Produção de filmes e campanhas publicitárias através de marcas e agências. Com entregas em formatos transmídias.</p>
-                    </div>
-
-                    <div>
-                        <img src="./src/images/produçao2.webp" alt="Imagem de produção de materiais">
-                        <h3>DIGITAL</h3>
-                        <p>Produção de vídeos de conteúdo, institucionais, marketing, entretenimento e diversos outros segmentos para sites e redes sociais.</p>
-                    </div>
-
-                    <div>
-                        <img src="./src/images/produçao3.webp" alt="Imagem de produção em set e publicidade">
-                        <div>
-                            <h3>EVENT</h3>
-                            <p>Produção de vídeos para eventos, palestras, congressos, ações de ativação e convenções com o resumo do que aconteceu, trazendo em uma edição dinâmica os melhores momentos através de um trailer.</p>
-                        </div>
-                    </div>
-
-                    <div>
-                        <img src="./src/images/produçao4.webp" alt="Imagem de produção em set e publicidade">
-                        <div>
-                            <h3>VIDEO HOUSE</h3>
-                            <p>Seremos a house audiovisual da sua empresa. Produzimos suas demandas recorrentes em vídeo, reels, stories, feed. Nossos videomakers e editores darão conta do seu volume de produção.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Portfólio --> 
-            <section class="portfolio">
-                <span id="portfolio"></span>
-                <div class="portfolioTitle reveal">
-                    <div class="rectangle"></div>
-                    <h2>PORTFÓLIO</h2>
-                    <div class="rectangle"></div>
-                </div>
-
-                <div id="portfolioContent" class="portfolioContent reveal"></div>
-            </section>
-        </main>
-
-        <!-- Rodapé --> 
-        <footer>
-            <div>
-                <label>contato@ph7filmes.com.br</label>
-                <button id="emailButton" onclick="copyText()">Copiar E-mail</button>
-            </div>
-            <p>© <label class="year"></label>. Todos os direitos reservados.</p>
-        </footer>
-
-        <!-- Botão Whatsapp Flutuante --> 
-        <a class="infoWhats" target="_blank" href="https://wa.me/5180606107?text=Olá, gostaria de entrar em contato sobre...">
-            <img src="./src/assets/icon-whatsapp.webp" alt="Ícone do aplicativo Whatsapp"/>
+  <body>
+    <!-- Barra de Navegação -->
+    <nav>
+      <!-- Logotipo -->
+      <div class="logo">
+        <a href="/" title="PH7 Filmes">
+          <img
+            src="./src/assets/logo.webp"
+            alt="Logotipo da PH7 Filmes"
+            fetchpriority="high"
+          />
         </a>
+      </div>
 
-        <!-- Ícone de seta flutuante para âncoragem --> 
-        <div class="downArrow scroll">
-            <a href="#sobrenos"> <img src="./src/assets/down.webp" alt="Seta de navegação baixo"> </a>
+      <!-- Menu -->
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="#sobrenos" title="Sobre Nós"> SOBRE NÓS </a>
+          </li>
+          <li>
+            <span aria-hidden="true" style="margin: 0 10px">|</span>
+            <a href="#oquefazemos" title="O Que Fazemos"> O QUE FAZEMOS </a>
+          </li>
+          <li>
+            <span aria-hidden="true" style="margin: 0 10px">|</span>
+            <a href="#portfolio" title="Portfólio"> PORTFÓLIO </a>
+          </li>
+          <li class="hidden">
+            <span aria-hidden="true" style="margin: 0 10px">|</span>
+            <span>SEGMENTOS</span>
+            <ul>
+              <li>
+                <a
+                  href="./segmentos.html#segmentos"
+                  title="Ver segmento Educação"
+                >
+                  EDUCAÇÃO
+                </a>
+              </li>
+              <li>
+                <a
+                  href="./segmentos.html#publicidade"
+                  title="Ver segmento Publicidade"
+                >
+                  PUBLICIDADE
+                </a>
+              </li>
+              <li>
+                <a
+                  href="./segmentos.html#marketing"
+                  title="Ver segmento Marketing"
+                >
+                  MARKETING
+                </a>
+              </li>
+              <li>
+                <a
+                  href="./segmentos.html#variedades"
+                  title="Ver segmento Variedades"
+                >
+                  VARIEDADES
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="menuMobile">
+        <ul>
+          <li>
+            <img
+              src="./src/assets/menu-mobile.webp"
+              alt="Menu Hambúrguer Mobile"
+            />
+
+            <ul>
+              <li>
+                <a href="#sobrenos" title="Ir para a seção Sobre Nós">
+                  SOBRE NÓS
+                </a>
+              </li>
+              <li>
+                <a href="#oquefazemos" title="Ir para a seção O Que Fazemos">
+                  O QUE FAZEMOS
+                </a>
+              </li>
+              <li>
+                <a href="#portfolio" title="Ir para a seção Portfólio">
+                  PORTFÓLIO
+                </a>
+              </li>
+              <li class="hidden">
+                <a href="./segmentos.html" title="Ver todos os segmentos">
+                  SEGMENTOS
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Ícones Redes Sociais -->
+      <div class="icons">
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/ph7filmes/"
+              title="Instagram da PH7 Filmes"
+            >
+              <img
+                src="./src/assets/icon-instagram.webp"
+                alt="Ícone da rede social Instagram"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://youtube.com/@ph7filmes"
+              title="Canal do Youtube da PH7 Filmes"
+            >
+              <img
+                src="./src/assets/icon-youtube.webp"
+                alt="Ícone da plataforma Youtube"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Vídeo Principal -->
+      <section id="mainVideo" class="mainVideo">
+        <button
+          aria-label="Play/Pause"
+          class="audioButton hidden"
+          title="Ativar ou desativar áudio do vídeo principal"
+          onclick="handleAudio()"
+        >
+          <img alt="Botão Play/Pause" src="./src/assets/mute.png" />
+        </button>
+        <video playsinline autoplay loop muted width="100%">
+          <source src="./src/videos/reels.mp4" type="video/mp4" />
+        </video>
+
+        <!-- Overlay com contadores animados (main.js anima de 0 até data-target) -->
+        <div class="videoOverlay">
+          <div class="overlayContent reveal">
+            <img
+              class="overlayLogo"
+              src="./src/assets/logo.webp"
+              alt="Logotipo da PH7 Filmes"
+              title="PH7 Filmes"
+            />
+            <ul class="stats">
+              <li>
+                <strong><span class="counter" data-target="14">0</span> +</strong>
+                <p>anos de experiência</p>
+              </li>
+              <li>
+                <strong><span class="counter" data-target="700">0</span> +</strong>
+                <p>projetos entregues</p>
+              </li>
+              <li>
+                <strong><span class="counter" data-target="60">0</span> +</strong>
+                <p>clientes atendidos</p>
+              </li>
+              <li>
+                <strong><span class="counter" data-target="7">0</span> +</strong>
+                <p>estados percorridos</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sobre Nós -->
+      <section class="aboutUs">
+        <span id="sobrenos"></span>
+        <div class="aboutUsTitle reveal">
+          <div class="rectangle"></div>
+          <h2>SOBRE NÓS</h2>
+          <div class="rectangle"></div>
         </div>
 
-        <div class="upArrow scroll">
-            <a href="#mainVideo"> <img src="./src/assets/up.webp" alt="Seta de navegação cima"> </a>
+        <div class="aboutUsContent reveal">
+          <div>
+            <img
+              id="backstage1"
+              src="./src/images/bastidores1.webp"
+              alt="Imagem 1 de bastidores de uma produção"
+              fetchpriority="high"
+            />
+            <img
+              id="backstage2"
+              src="./src/images/bastidores2.webp"
+              alt="Imagem 2 de bastidores de uma produção"
+              fetchpriority="high"
+            />
+            <img
+              id="backstage3"
+              src="./src/images/bastidores3.webp"
+              alt="Imagem 3 de bastidores de uma produção"
+              fetchpriority="high"
+            />
+          </div>
+
+          <article class="reveal">
+            Somos <strong>apaixonados pelo audiovisual</strong>, produzir
+            ​histórias que conectam pessoas e marcas está em ​nosso DNA.
+            Nascemos em 2012, no Rio Grande do ​Sul, mas alçamos voos e hoje
+            temos orgulho de ter ​contado histórias em boa parte do Brasil.
+            Surgimos ​com a missão de nos tornarmos
+            <strong>parceiros ​estratégicos</strong> dos nossos clientes, porque
+            antes de ​falar de audiovisual, escolhemos entender o seu ​mercado,
+            público, valores, propósitos e ​objetivos reais. Através de ações
+            humanizadas e capacidade de adaptabilidade, nos
+            <strong>envolvemos profundamente</strong>, ​fazendo com que nossos
+            filmes ajudem ​nossos clientes a se comunicarem melhor, gerando
+            ​diferenciação de marca, atraindo, conquistando e ​engajando novos
+            públicos. Estamos antenados nas ​tendências e novas tecnologias, e
+            através delas ​oferecemos
+            <strong>soluções criativas e customizadas</strong> para ​os mais
+            variados desafios da comunicação no ​audiovisual.
+          </article>
+        </div>
+      </section>
+
+      <!-- O que Fazemos -->
+      <section class="whatUsDo">
+        <span id="oquefazemos"></span>
+        <div class="whatUsDoTitle reveal">
+          <div class="rectangle"></div>
+          <h2>O QUE FAZEMOS</h2>
+          <div class="rectangle"></div>
         </div>
 
-        <!-- Modelo de card para o carrossel --> 
-        <div class="model">
-            <div class="videoItem">
-                <div class="cardBox">
-                    <button id="openVideoButton" href="" onclick="openVideo()" aria-label="Botão"></button>
-                    <img title="" alt="" src="" />
-                </div>
+        <div class="whatUsDoContent reveal">
+          <div class="whatUsDoItem">
+            <div class="whatUsDoMedia">
+              <img src="./src/images/producao1.webp" alt="Imagem de produção utilizando estabilizador" />
+              <h3>PUBLICIDADE</h3>
             </div>
+            <p>
+              Comerciais e campanhas publicitárias para TV e web, ações de marketing, branding, lançamentos, promocionais, webséries, minidocs, produtos e serviços.
+            </p>
+          </div>
+
+          <div class="whatUsDoItem">
+            <div class="whatUsDoMedia">
+              <img src="./src/images/producao2.webp" alt="Imagem de produção utilizando estabilizador" />
+              <h3>CONTEÚDO</h3>
+            </div>
+            <p>
+              Vídeos de conteúdo e entretenimento para redes sociais, institucionais, manifestos, vídeo marketing, vídeo cases, vídeos de endomarketing, podcasts e videocasts.
+            </p>
+          </div>
+
+          <div class="whatUsDoItem">
+            <div class="whatUsDoMedia">
+              <img src="./src/images/producao3.webp" alt="Imagem de produção em set e publicidade" />
+              <h3>EVENTOS</h3>
+            </div>
+            <p>
+              Transmissões ao vivo, vídeos de divulgação, cobertura real time, aftermovies, musicais e vídeos de pós-venda de eventos corporativos, palestras, congressos e convenções.
+            </p>
+          </div>
+
+          <div class="whatUsDoItem">
+            <div class="whatUsDoMedia">
+              <img src="./src/images/producao4.webp" alt="Imagem de produção em set e publicidade" />
+              <h3>ENSINO</h3>
+            </div>
+            <p>
+              Produção de conteúdo e-learning para ensino a distância (EAD). Corporativo, universidades e cursos livres. Vídeo aulas, pílulas, nanolearning e tutoriais.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Carrossel de Clientes -->
+      <section class="clients" aria-label="Clientes">
+        <div class="clientsContent reveal">
+          <div class="clientsTrack">
+            <ul class="clientsGroup">
+              <li>
+                <img
+                  src="./src/images/clientes/ache.webp"
+                  alt="Logotipo Aché"
+                  title="Aché"
+                />
+              </li>
+              <li>
+                <img
+                  src="./src/images/clientes/associadas.webp"
+                  alt="Logotipo Farmácias Associadas"
+                  title="Farmácias Associadas"
+                />
+              </li>
+              <li>
+                <img
+                  src="./src/images/clientes/baldo.webp"
+                  alt="Logotipo Baldo"
+                  title="Baldo"
+                />
+              </li>
+              <li>
+                <img
+                  src="./src/images/clientes/besouro.webp"
+                  alt="Logotipo Instituto Besouro"
+                  title="Instituto Besouro"
+                />
+              </li>
+              <li>
+                <img
+                  src="./src/images/clientes/digitvs.webp"
+                  alt="Logotipo Digitvs"
+                  title="Digitvs"
+                />
+              </li>
+              <li>
+                <img
+                  src="./src/images/clientes/fiergs.webp"
+                  alt="Logotipo FIERGS"
+                  title="FIERGS"
+                />
+              </li>
+              <li>
+                <img
+                  src="./src/images/clientes/gerdau.webp"
+                  alt="Logotipo Gerdau"
+                  title="Gerdau"
+                />
+              </li>
+              <li>
+                <img
+                  src="./src/images/clientes/itau.webp"
+                  alt="Logotipo Itaú Personnalité"
+                  title="Itaú Personnalité"
+                />
+              </li>
+              <li>
+                <img
+                  src="./src/images/clientes/kley-hertz.webp"
+                  alt="Logotipo Kley Hertz"
+                  title="Kley Hertz"
+                />
+              </li>
+              <li>
+                <img
+                  src="./src/images/clientes/la-salle.webp"
+                  alt="Logotipo Universidade La Salle"
+                  title="Universidade La Salle"
+                />
+              </li>
+              <li>
+                <img
+                  src="./src/images/clientes/lugano.webp"
+                  alt="Logotipo Lugano"
+                  title="Lugano"
+                />
+              </li>
+              <li>
+                <img
+                  src="./src/images/clientes/melissa.webp"
+                  alt="Logotipo Melissa"
+                  title="Melissa"
+                />
+              </li>
+              <li>
+                <img
+                  src="./src/images/clientes/melnick.webp"
+                  alt="Logotipo Melnick"
+                  title="Melnick"
+                />
+              </li>
+              <li>
+                <img
+                  src="./src/images/clientes/motormac.webp"
+                  alt="Logotipo Motormac"
+                  title="Motormac"
+                />
+              </li>
+              <li>
+                <img
+                  src="./src/images/clientes/neugebauer.webp"
+                  alt="Logotipo Neugebauer"
+                  title="Neugebauer"
+                />
+              </li>
+              <li>
+                <img
+                  src="./src/images/clientes/noschang.webp"
+                  alt="Logotipo Gráfica Noschang"
+                  title="Gráfica Noschang"
+                />
+              </li>
+              <li>
+                <img
+                  src="./src/images/clientes/perte.webp"
+                  alt="Logotipo Grupo Perte"
+                  title="Grupo Perte"
+                />
+              </li>
+              <li>
+                <img
+                  src="./src/images/clientes/pompeia.webp"
+                  alt="Logotipo Pompéia"
+                  title="Pompéia"
+                />
+              </li>
+              <li>
+                <img
+                  src="./src/images/clientes/sanremo.webp"
+                  alt="Logotipo Sanremo"
+                  title="Sanremo"
+                />
+              </li>
+              <li>
+                <img
+                  src="./src/images/clientes/sebrae.webp"
+                  alt="Logotipo Sebrae"
+                  title="Sebrae"
+                />
+              </li>
+              <li>
+                <img
+                  src="./src/images/clientes/slc-agricola.webp"
+                  alt="Logotipo SLC Agrícola"
+                  title="SLC Agrícola"
+                />
+              </li>
+              <li>
+                <img
+                  src="./src/images/clientes/uber.webp"
+                  alt="Logotipo Uber"
+                  title="Uber"
+                />
+              </li>
+              <li>
+                <img
+                  src="./src/images/clientes/unidas.webp"
+                  alt="Logotipo Unidas"
+                  title="Unidas"
+                />
+              </li>
+              <li>
+                <img
+                  src="./src/images/clientes/wolens.webp"
+                  alt="Logotipo Wolens"
+                  title="Wolens"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfólio -->
+      <section class="portfolio">
+        <span id="portfolio"></span>
+        <div class="portfolioTitle reveal">
+          <div class="rectangle"></div>
+          <h2>PORTFÓLIO</h2>
+          <div class="rectangle"></div>
         </div>
 
-        <!-- Modelo para vídeo em tela cheia --> 
-        <div class="fullScreen">
-            <button id="closeModalButton" onclick="closeModal()"></button>
-            <iframe title="vimeo-player" src="" frameborder="0" allow="autoplay; fullscreen;" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <div id="portfolioContent" class="portfolioContent reveal"></div>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+      <div>
+        <label>contato@ph7filmes.com.br</label>
+        <button
+          id="emailButton"
+          title="Copiar e-mail para a área de transferência"
+          onclick="
+            copyText();
+            gtag_report_conversion();
+          "
+        >
+          Copiar E-mail
+        </button>
+      </div>
+      <p>© <label class="year"></label>. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Botão Whatsapp Flutuante -->
+    <a
+      class="infoWhats"
+      target="_blank"
+      title="Fale conosco pelo WhatsApp"
+      href="https://wa.me/51981030061?text=Olá, gostaria de entrar em contato sobre..."
+      onclick="
+        return gtag_report_conversion(
+          `https://wa.me/51981030061?text=Olá, gostaria de entrar em contato sobre...`,
+        );
+      "
+    >
+      <img
+        src="./src/assets/icon-whatsapp.webp"
+        alt="Ícone do aplicativo Whatsapp"
+      />
+    </a>
+
+    <!-- Ícone de seta flutuante para âncoragem -->
+    <div class="downArrow scroll">
+      <a href="#sobrenos" title="Ir para a seção Sobre Nós">
+        <img src="./src/assets/down.webp" alt="Seta de navegação baixo" />
+      </a>
+    </div>
+
+    <div class="upArrow scroll">
+      <a href="#mainVideo" title="Ir para o vídeo principal">
+        <img
+          src="./src/assets/up.webp"
+          alt="Seta de navegação cima"
+          title="Ir para o topo da página"
+        />
+      </a>
+    </div>
+
+    <!-- Modelo de card para o carrossel -->
+    <div class="model">
+      <div class="videoItem">
+        <div class="cardBox">
+          <button
+            id="openVideoButton"
+            href=""
+            onclick="openVideo()"
+            aria-label="Botão"
+          ></button>
+          <img title="" alt="" src="" />
         </div>
-        
-        <!-- Scripts da página --> 
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-3.4.1.min.js"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
-        <script type="text/javascript" src="https://player.vimeo.com/api/player.js"></script>
-        <script type="text/javascript" src="https://bundle.run/buffer@6.0.3"></script>
-        <script type="text/javascript" src="./src/js/api.js"></script>
-        <script type="text/javascript" src="./src/js/main.js"></script>
-    </body>
+      </div>
+    </div>
+
+    <!-- Modelo para vídeo em tela cheia -->
+    <div class="fullScreen">
+      <button id="closeModalButton" onclick="closeModal()"></button>
+      <iframe
+        title="video-player"
+        src=""
+        frameborder="0"
+        allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+        allowfullscreen
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
+      ></iframe>
+    </div>
+
+    <!-- Scripts da página -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-3.4.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript" src="./src/js/portfolio.js"></script>
+    <script type="text/javascript" src="./src/js/main.js"></script>
+  </body>
 </html>

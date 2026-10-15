@@ -25,8 +25,7 @@ nav{
     align-items: center;
     background-color: #3F3F3F;
     width: 100%;
-    padding: 22px 0;
-    max-height: 97px;
+    max-height: 80px;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -67,13 +66,14 @@ section{
     position: relative;
 }
 
+/* Compensa a altura do menu fixo (--nav-height, medida pelo main.js) nas âncoras */
 section span{
     position: absolute; 
-    top:-96px;
+    top: calc(1px - var(--nav-height, 80px));
 }
 
 .logo img{
-    width: 100px;
+    width: 75px;
     transition: transform .3s;
 }
 
@@ -180,9 +180,10 @@ section span{
     color: #8BC53E;
 }
 
+/* --nav-height é atualizada pelo main.js com a altura real do menu */
 .segments {
-    margin-top: 97px;
-    scroll-margin-top: 97px;
+    margin-top: calc(var(--nav-height, 80px) - 1px);
+    scroll-margin-top: var(--nav-height, 80px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -332,7 +333,8 @@ section span{
 
 .infoWhats img{
     position: fixed;
-    width: 60px;
+    z-index: 2;
+    width: 85px;
     right: 25px;
     bottom: 25px;
 
@@ -485,33 +487,15 @@ footer #emailButton{
 }
 
 @media (max-width: 1015px) {
-    html{
-        scroll-padding-top: 115px;
-    }
-
+    /* Header em uma linha: logo - menu/redes (no mobile: logo - redes - hambúrguer) */
     nav{
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        padding: 22px;
-        max-height: 115px;
-    }
-
-    .segments{
-        margin-top: 115px;
-    }
-
-    section span{ 
-        top: -115px;
-    }
-
-    .logo{
-        margin-bottom: 5px;
-        margin-left: 50px;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 10px 22px;
     }
 
     .logo img{
-        width: 70px;
+        width: 58px;
     }
 
     .icons ul li {
@@ -520,12 +504,6 @@ footer #emailButton{
 
     .icons ul li a img {
         width: 30px;
-    }
-
-    .menu{
-        position: absolute;
-        right: 25px;
-        top: 45px;
     }
 
     .upArrow{
@@ -565,23 +543,41 @@ footer #emailButton{
         display: none;
     }
 
+    .icons{
+        order: 2;
+        margin-left: auto;
+    }
+
     .menuMobile{
         display: block;
-        position: absolute;
-        right: 35px;
-        top: 25px;
+        order: 3;
     }
 
     .menuMobile ul li img {
-        width: 55px;
+        display: block;
+        width: 40px;
     }
 
     .menuMobile ul li ul{
-        top: 53px;
-        left: -91px;
+        top: calc(100% + 12px);
+        left: auto;
+        right: -10px;
+        width: max-content;
+        padding: 0 15px;
+    }
+
+    /* Ponte invisível sobre o vão entre o ícone e o submenu, para o hover não fechar */
+    .menuMobile ul li ul::before{
+        content: "";
+        position: absolute;
+        top: -14px;
+        left: 0;
+        right: 0;
+        height: 14px;
     }
 
     .menuMobile ul li ul li{
+        white-space: nowrap;
         font-size: 1.2rem;
     }
 
@@ -590,7 +586,7 @@ footer #emailButton{
     }
 
     .infoWhats img{
-        width: 50px;
+        width: 70px;
     }
 
     .slick-prev {
@@ -642,18 +638,13 @@ footer #emailButton{
         line-height: 31px;
     }
 
-    .menuMobile{
-        right: 20px;
-        top: 35px;
+    nav{
+        gap: 12px;
+        padding: 10px 15px;
     }
 
     .menuMobile ul li img{
-        width: 45px;
-    }
-
-    .menuMobile ul li ul{
-        top: 45px;
-        left: -88px;
+        width: 34px;
     }
 }
 

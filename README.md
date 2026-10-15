@@ -12,8 +12,9 @@ Projeto desenvolvido para a produtora PH7 Filmes. Pode ser acessado também via 
 - Botão de copiar e-mail
 - Showroom com vídeo principal
 - Carrossel de cards com vídeos da produtora
-- Integração dos vídeos pela API do Vimeo
+- Integração dos vídeos pela API do YouTube (YouTube Data API v3)
 - Sistema de controle de cache para requisições da API
+- Lista reserva de vídeos caso a API falhe
 - Visualização dos vídeos em tela cheia
 - Código semântico para SEO
 - Smooth Scroll
@@ -24,8 +25,8 @@ Projeto desenvolvido para a produtora PH7 Filmes. Pode ser acessado também via 
 - CSS
 - JavaScript
 - JQuery
-- Axios
-- VimeoAPI
+- Slick Carousel
+- YouTube Data API v3
 - Git/GitHub
 
 [Clique aqui para acessar o projeto](https://axlbr.github.io/ph7filmes-v2/)
